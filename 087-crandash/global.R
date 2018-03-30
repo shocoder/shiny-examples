@@ -5,6 +5,18 @@ library(shinydashboard)
 library(bubbles)        # devtools::install_github("jcheng5/bubbles")
 source("bloomfilter.R")
 
+# Shoaib: Install shinyjs
+library(shinyjs)
+
+
+# Shoaib: Set the credentials here
+golablUserID <- c("test","shiny")
+globalPassword <- c("test","shiny")
+
+
+
+
+
 # An empty prototype of the data frame we want to create
 prototype <- data.frame(date = character(), time = character(),
   size = numeric(), r_version = character(), r_arch = character(),
